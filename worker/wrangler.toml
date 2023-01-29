@@ -1,0 +1,12 @@
+compatibility_date = "2023-01-28"
+main = "src/index.ts"
+name = "pages-do-minimal"
+
+[durable_objects]
+bindings = [
+  {name = "HELLO_DURABLE", class_name = "HelloDurable"},
+]
+
+[[migrations]]
+new_classes = ["HelloDurable"]
+tag = "v1"
